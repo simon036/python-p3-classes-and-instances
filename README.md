@@ -6,7 +6,7 @@
 - Describe a Python instance.
 - Create an instance of a class.
 
-***
+---
 
 ## Key Vocab
 
@@ -21,7 +21,7 @@
 - **Function**: a series of steps that create, transform, and move data.
 - **Method**: a function that is defined inside of a class.
 
-***
+---
 
 ## Introduction
 
@@ -39,7 +39,7 @@ How can we tell our Python program to deal with these dogs? Well, we can write a
 `Dog` class that produces individual dog objects, each of which contains all the
 information and behaviors of an individual dog.
 
-***
+---
 
 ## Defining a Class
 
@@ -47,7 +47,8 @@ Think of a class like a blueprint that defines how to build an object. The `Dog`
 class is different from an individual dog just as the blueprints that show how
 to build a house are not the actual house. A Python class both contains the
 instructions for creating new objects and has the ability to create those
-objects. Calling `.new` on the `Dog` class is like getting a brand new dog
+objects. A constructor is a special function used to create an instance of a
+class. Calling the `Dog` class constructor is like getting a brand new dog
 object from an assembly line which produces a series of similar dog objects
 based on the same `Dog` template.
 
@@ -78,7 +79,7 @@ class MyClass
 
 With this code alone, we can now make new dogs!
 
-***
+---
 
 ## Creating Instances of Classes
 
@@ -101,14 +102,15 @@ In the code sample above, once we've defined our `Dog` class with the `class`
 keyword, we immediately can bring to life new individual dogs, the variable
 `fido` which points to a new **instance** of a dog.
 
-We **instantiate** the `Dog` class with the same syntax for implementing a
-function or method: a closed set of parentheses (`()`). This creates our
-**instance**, `fido`.
+We **instantiate** an instance of the `Dog` class by calling the constructor
+function `Dog()`. This creates our **instance** of the `Dog` class, which we
+assign to the variable `fido`. An instance of a class is also referred to as an
+object.
 
 **Instantiate** means bringing a new object to life, a new individual, like a
 particular dog, like Snoopy or Lassie or Rover. Each particular dog is an
-individual that was **instantiated** when we called `Dog()` to birth it into our
-world of programming.
+individual that was **instantiated** when we called the constructor function
+`Dog()` to birth it into our world of programming.
 
 We call these individuals, each specific dog or version of our class,
 **instances**. An **instance** is a single occurrence of an **object.**
@@ -181,7 +183,7 @@ snoopy == fido
 Classes are the blueprints that define the behavior and information our objects
 will contain. They let us manufacture and instantiate new instances.
 
-***
+---
 
 ## Conclusion
 
@@ -194,7 +196,7 @@ parentheses as you would a function or method. This will **instantiate** (create
 a new **instance** of) an object from the class. Each instance created will be a
 unique object in memory.
 
-***
+---
 
 ## Resources
 
